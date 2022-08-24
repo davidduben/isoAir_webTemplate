@@ -1,0 +1,280 @@
+footer{
+    width: 100%;
+    font-family: $montserrat;
+    color: $fakeBlack;
+    .container-footer{
+        width: 100%;
+        padding: 100px 20px 100px 20px;
+        background-color: $footerBlack;
+        color: $white;
+        font-size: 14px;
+        line-height: 26px;
+        .form-section{
+            max-width: $sirka;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logo-green{
+                width: 160px;
+                margin-bottom: 60px;
+            }
+            .form-content{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                .form-text{
+                    width: 50%;
+                    padding-right: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    .residence, .establishment, .contact{
+                            margin-bottom: 40px;
+                            display: flex;
+                            flex-direction: column;
+                        strong{
+                            text-transform: uppercase;
+                            line-height: 30px;
+                            font-size: 14px;
+                            text-align: right;
+                        }
+                        span{
+                            line-height: 30px;
+                            font-size: 14px;
+                            text-align: right;
+                            a{
+                                transition: all 400ms ease;
+                                color: $white;
+                                text-decoration: underline;
+                                &:hover, &:active{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    .contact{
+                        margin-bottom: 0px;
+                    }
+                }
+                .form{
+                    width: 50%;
+                    padding-left: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .form-title{
+                        color: $white;
+                        text-transform: uppercase;
+                    }
+                    .gdpr{
+                        color: $white;
+                        font-size: 12px;
+                        font-weight: 400;
+                        max-width: 469px;
+                        line-height: 21px;
+                    }
+                    .kapca{
+                        color: $gray;
+                        font-size: 12px;
+                        font-weight: 400;
+                        max-width: 469px;
+                        line-height: 21px;
+                        margin-top: 15px;
+                        a{
+                            text-decoration: underline;
+                        }
+                    }
+                    form{
+                        margin: 6px 0 15px 0;
+                        width: 100%;
+                        max-width: 385px;
+                        color: $white;
+                        display: flex;
+                        flex-direction: column;
+                        label{
+                            margin-bottom: 5px;
+                            font-weight: 400;
+                        }
+                        textarea{
+                            height: auto;
+                            min-height: 200px;
+                            margin-bottom: 30px;
+                            display: block;
+                            width: 100%;
+                            padding: 8px 12px;
+                            font-size: 14px;
+                            line-height: 1.42857143;
+                            color: #333333;
+                            vertical-align: middle;
+                            background-color: $white;
+                            border: 1px solid #cccccc;
+                            font-family: $montserrat;
+                        }
+                        .text-input{
+                            display: block;
+                            width: 100%;
+                            height: 50px;
+                            padding: 8px 12px;
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                            line-height: 1.42857143;
+                            color: #333333;
+                            vertical-align: middle;
+                            background-color: $white;
+                            border: 1px solid #cccccc;
+                            font-family: $montserrat;
+                            overflow: auto;
+                        }
+                        .send-button{
+                            display: inline-block;
+                            border: 0;
+                            line-height: inherit;
+                            cursor: pointer;
+                            width: 200px;
+                            padding: 15px 0;
+                            border: 2px solid $mango;
+                            border-radius: 60px;
+                            background-color: $mango;
+                            transition: all 400ms ease;
+                            color: $white;
+                            font-weight: 700;
+                            text-align: center;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-family: $montserrat;
+                            -webkit-appearance: none;
+                            &:hover, &:active{
+                                background-color: $footerBlack;
+                                color: $mango;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bubbles{
+    width: 100%;
+    height: 65px;
+    background-image: url(../img/bublinky.png);
+    background-position: 50% 0%;
+    background-size: auto 65px;
+    background-repeat: repeat-x;
+    margin-top: -1px;
+}
+
+.copyright-section{
+    width: 100%;
+    padding: 20px 0;
+    .container-copyright{
+        width: 100%;
+        max-width: $sirka;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: $footerBlack;
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    footer{
+        .container-footer{
+            padding: 80px 20px 80px 20px;
+            .form-section{
+                .logo-green{
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    
+    .bubbles{
+        height: 50px;
+        background-size: auto 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    footer{
+        .container-footer{
+            padding: 60px 20px 60px 20px;
+            .form-section{
+                .logo-green{
+                    margin-bottom: 40px;
+                }
+                .form-content{
+                    flex-direction: column;
+                    align-items: center;
+                    .form-text{
+                        width: 100%;
+                        margin-bottom: 40px;
+                        padding-right: 0px;
+                        text-align: center;
+                        align-items: center;
+                        .residence, .establishment, .contact{
+                                margin-bottom: 30px;
+                                strong, span{
+                                    text-align: center;
+                                }
+                        }
+                        .contact{
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .form{
+                        width: 100%;
+                        padding-left: 0px;
+                        text-align: center;
+                        align-items: center;
+                        form{
+                            justify-content: center;
+                            align-items: center;
+                            label{
+                                text-align: center;
+                            }
+                        }
+                        .gdpr{
+                            max-width: 385px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px){
+    footer{
+        .container-footer{
+            padding: 50px 20px 50px 20px;
+            .form-section{
+                .logo-green{
+                    margin-bottom: 30px;
+                }
+                .form-content{
+                    flex-direction: column;
+                    align-items: center;
+                    .form-text{
+                    }
+                    .form{
+                    }
+                }
+            }
+        }
+    }
+    
+    .bubbles{
+        height: 35px;
+        background-size: auto 35px;
+    }
+}

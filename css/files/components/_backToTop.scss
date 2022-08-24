@@ -1,0 +1,42 @@
+#backToTop {
+    width: 65px;
+    line-height: 65px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 29px;
+    text-decoration: none;
+    color: white;
+    background-color: $mango;
+    border-radius: 35px;
+    transition: all 400ms ease;
+    &:hover, &:active{
+        background-color: #999;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #backToTop {
+        width: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #backToTop {
+        width: 50px;
+        line-height: 50px;
+        bottom: 25px;
+        right: 25px;
+        font-size: 23px;
+    }
+}

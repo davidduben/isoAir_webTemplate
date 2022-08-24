@@ -1,0 +1,26 @@
+.polopate{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    .polopate-banner{
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .polopate{
+        top: 100px;
+        .polopate-banner{
+            width: 160px;
+        }
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .polopate{
+        top: 85px;
+        .polopate-banner{
+            width: 115px;
+        }
+    }
+}

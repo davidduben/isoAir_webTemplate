@@ -1,0 +1,90 @@
+.offer{
+    width: 100%;
+    background-color: $green;
+    font-family: $montserrat;
+    padding: 130px 0;
+    .container-offer{
+        max-width: $sirka;
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: $white;
+        }
+        p{
+            color: $white;
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+        }
+        .get-offer{
+            margin-top: 51px;        
+            width: 100%;
+            max-width: 300px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 23px 0;
+            border: 2px solid $mango;
+            border-radius: 60px;
+            background-color: $mango;
+            transition: all 400ms ease;
+            color: $white;
+            &:hover, &:active{
+                border: 2px solid $white;
+                background-color: $green;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .offer{
+        padding: 100px 0;
+        .container-offer{
+            h2{
+            }
+            p{
+                font-size: 21px;
+                line-height: 32px;
+            }
+            .get-offer{
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .offer{
+        padding: 70px 0;
+        .container-offer{
+            h2{
+                font-size: 26px;
+                line-height: 30px;
+            }
+            p{
+                font-size: 17px;
+                line-height: 28px;
+            }
+            .get-offer{
+                margin-top: 40px;
+                padding: 13px 0;
+                max-width: 260px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .offer{
+        padding: 50px 0;
+    }
+}

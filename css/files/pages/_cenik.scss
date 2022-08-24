@@ -1,0 +1,76 @@
+.content-cenik{
+    padding-bottom: 0px;
+}
+
+.table-cenik {
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        font-family: $montserrat;
+        color: $fakeBlack;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 0px;
+        
+        thead{
+            background-color: $green;
+            color: $white;
+            th{
+                padding-top: 1.4em;
+                padding-bottom: 1.4em;
+                text-align: center;
+                width: auto;
+            }
+        }
+        
+        tbody{
+            td, th {
+                border: 1px solid #ccc;
+                padding: 1.6em 1em 1.6em 1em;
+                text-align: center;
+            }
+            
+            th{
+                &:nth-child(1){
+                    width: auto;
+                }
+                
+                &:nth-child(2){
+                    width: auto;
+                }
+                
+                &:nth-child(3){
+                    width: auto;
+                }
+                
+                &:nth-child(4){
+                    width: auto;
+                }
+                
+                &:nth-child(5){
+                    width: auto;
+                }
+            }
+            
+            td{
+                &:nth-child(3){
+                    background-color: #f9f9f9;
+                    font-weight: bold;
+                }
+                &:nth-child(5){
+                    background-color: #f9f9f9;
+                    font-weight: bold;
+                } 
+                &:first-child{
+                    font-weight: bold;
+                }
+            }
+            
+            tr{
+                &:nth-child(2n){
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}

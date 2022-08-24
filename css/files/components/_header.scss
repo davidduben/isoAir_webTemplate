@@ -1,0 +1,314 @@
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: $montserrat;
+    .header-left, .header-right{
+        flex: 1;
+        background-color: $green;
+    }
+    .header-right{
+        background-color: transparent;
+    }
+    .conatiner-header{
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .main-header-block{
+            display: flex;
+            flex: 0 0 auto;
+            .logo-block{
+                display: flex;
+                flex: 0 0 auto;
+                background-color: $green;
+                height: 120px;
+                padding: 0px 45px 0px 60px;
+                justify-content: center;
+                align-items: center;
+                a{
+                    .logo{
+                        margin-top: 4px;
+                        width: 169px;
+                    }
+                }
+            }
+            .tel-block{
+                display: flex;
+                flex: 0 0 auto;
+                background-color: $white;
+                padding: 0 35px;
+                justify-content: center;
+                align-items: center;
+                border-bottom-right-radius: 40px;
+                a{
+                    padding-left: 40px;
+                    background-image: url(../img/ico/icon-phone.svg);
+                    background-position: 0px 18px;
+                    background-size: 22px;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    span{
+                        font-size: 19px;
+                        font-weight: 600;
+                        color: $fakeBlack;
+                    }
+                    .phone-text{
+                        color: $gray;
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+        nav{
+            background-color: transparent;
+            display: flex;
+            flex: 0 1 auto;
+            padding-right: 20px;
+            padding-left: 20px;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                max-width: 100%;
+                flex-wrap: wrap;
+                li{
+                    padding: 10px;
+                    line-height: 26px;
+                    border-bottom: 3px solid transparent;
+                    transition: all 400ms ease;
+                    a{
+                        span{
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: $doubleFakeBlack;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &:last-child{
+                        //margin: 0;
+                    }
+                    &:hover{
+                        border-bottom-color: $green;
+                    }
+                    &:active{
+                        a{
+                            span{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+                .current-menu-item{
+                    a{
+                        span{
+                            color: $green;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-icon{
+            display: none;
+            //display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 13px;
+            right: 20px;
+            background-color: $mango;
+            padding: 20px;
+            border-radius: 33px;
+            .burger{
+                .lower-bun, .beef, .upper-bun {
+                    width: 22px;
+                    height: 3px;
+                    background-color: $white;
+                    margin: 3px 0;
+                    transition: 0.3s;
+                }
+            }
+            span{
+                font-size: 21px;
+                font-weight: 600;
+                margin-left: 6px;
+                color: $white;
+                font-family: $montserrat;
+            }
+        }
+        .change{
+            .burger{
+                .upper-bun{
+                    transform: rotate(-45deg) translate(-4px, 4px);
+                }
+                .beef{
+                    opacity: 0;
+                }
+                .lower-bun{
+                    transform: rotate(45deg) translate(-4px, -4px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .nav-on{
+        //overflow: hidden;
+    }
+    header{
+        .conatiner-header{
+            .main-header-block{
+                .logo-block{
+                    height: 90px;
+                    padding: 0 30px;
+                    a{
+                        .logo{
+                            width: 129px;
+                        }
+                    }
+                }
+                .tel-block{
+                    a{
+                        span{
+                        }
+                        .phone-text{
+                        }
+                    }
+                }
+            }
+            nav{
+                display: none;
+                //display: block;                
+                position: absolute;
+                right: 0;
+                width: 270px;
+                z-index: 999;
+                top: 95px;
+                ul{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    li{
+                        padding: 0;
+                        width: 100%;
+                        border-bottom: 1px solid $green;
+                        background-color: $white;
+                        a{
+                            width: 100%;
+                            display: inline-block;
+                            padding: 15px 0;
+                            text-align: center;
+                            span{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-icon{
+                display: flex;
+            }
+        }
+    }
+    .nav-on header .conatiner-header nav{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    .nav-on{
+        //overflow: hidden;
+    }
+    header{
+        .conatiner-header{
+            .main-header-block{
+                .logo-block{
+                    a{
+                        .logo{
+                        }
+                    }
+                }
+                .tel-block{
+                    padding: 0 15px;
+                    a{
+                        width: 30px;
+                        height: 30px;
+                        background-position: 50% 50%;
+                        background-size: 23px;
+                        .phone-text, .phone-number{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .menu-icon{
+                padding: 23px;
+                top: 12px;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    .nav-on header .conatiner-header nav{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .nav-on{
+        //overflow: hidden;
+    }
+    header{
+        .conatiner-header{
+            .main-header-block{
+                .logo-block{
+                    height: 80px;
+                    padding: 0 20px;
+                    a{
+                        .logo{
+                            width: 115px;
+                        }
+                    }
+                }
+                .tel-block{
+                    a{
+                        .phone-text, .phone-number{
+                        }
+                    }
+                }
+            }
+            .menu-icon{
+                padding: 23px;
+                top: 7px;
+                span{
+                    display: none;
+                }
+            }
+            nav{
+                width: 100%;
+                top: 90px;
+            }
+        }
+    }
+    .nav-on header .conatiner-header nav{
+        display: block;
+    }
+}

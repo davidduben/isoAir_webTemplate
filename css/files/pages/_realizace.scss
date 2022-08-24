@@ -1,0 +1,131 @@
+.content-realizace{
+    .container-realizace{
+        .gallery-realizace-bottom{
+            margin: 0 auto;
+            margin-top: 20px;
+            font-family: $montserrat;
+            color: $fakeBlack;
+            #lightgallery-rel-bot{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .photo-container{
+                    position: relative;
+                    width: 100%;
+                    width: 33%;
+                    max-width: 430px;
+                    margin-top: 30px;
+                    padding-right: 15px;
+                    padding-left: 15px;                
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .square-photo{
+                        width: 100%;
+                        position: relative;
+                        .photo{
+                            img{
+                                
+                            }
+                            .photo-hover{
+                                background-color: rgba(0, 0, 0, 0.0);
+                                bottom: 0;
+                                left: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                transition: background-color 0.15s ease 0s;
+                                .square{
+                                    height: 90px;
+                                    width: 90px;
+                                    background-color: white;
+                                    border-radius: 180px;
+                                    left: 50%;
+                                    margin-left: -45px;
+                                    margin-top: -45px;
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 50%;
+                                    transition: opacity 0.3s ease 0s;
+                                    .lupa{
+                                        display: block;
+                                        left: 50%;
+                                        margin-left: -15px;
+                                        margin-top: -15px;
+                                        opacity: 0;
+                                        position: absolute;
+                                        top: 50%;
+                                        border-radius: 0px;
+                                        transition: opacity 0.3s ease 0s;
+                                    }
+                                }
+                            }
+                            &:hover, &:active{
+                                .photo-hover{
+                                    background-color: rgba(255,255,255,0.3);
+                                    .square{
+                                        opacity: 1;
+                                        .lupa{
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .design-span{
+                        z-index: 10;
+                        padding: 15px;
+                        margin-top: -5px;
+                        width: 100%;                   
+                        border-bottom-left-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        background-color: $green;
+                        color: $white;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gallery-realizace{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px){
+    .content-realizace{
+        .container-realizace{
+            .gallery-realizace-bottom{
+                #lightgallery-rel-bot{
+                    .photo-container{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .content-realizace{
+        .container-realizace{
+            .gallery-realizace-bottom{
+                #lightgallery-rel-bot{
+                    .photo-container{
+                        width: 100%;
+                        max-width: 400px;
+                        padding-right: 0px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

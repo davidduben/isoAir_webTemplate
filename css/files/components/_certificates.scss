@@ -1,0 +1,174 @@
+.certificates{
+    width: 100%;
+    font-family: $montserrat;
+    padding: 130px 0;
+    background-color: $white;
+    color: $fakeBlack;
+    .container-certificates{
+        max-width: $sirka;
+        padding: 0 20px;
+        flex-direction: column;
+        h3{
+            margin-bottom: 60px;
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .certificates-list{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .certificate{
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                .img-pdf{
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    transition: all 400ms ease;
+                    img{
+                        
+                    }
+                    .photo-hover{
+                        background-color: rgba(0, 0, 0, 0);
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        transition: background-color 0.15s ease 0s;
+                        .circle{
+                            height: 90px;
+                            width: 90px;
+                            background-color: white;
+                            border-radius: 180px;
+                            left: 50%;
+                            margin-left: -45px;
+                            margin-top: -45px;
+                            opacity: 0;
+                            position: absolute;
+                            top: 50%;
+                            transition: opacity 0.3s ease 0s;
+                            img{
+                                display: block;
+                                left: 50%;
+                                margin-left: -15px;
+                                margin-top: -15px;
+                                opacity: 0;
+                                position: absolute;
+                                top: 50%;
+                                transition: opacity 0.3s ease 0s;
+                            }
+                        }
+                    }
+                    &:hover, &:active{
+                        .photo-hover{
+                            background-color: rgba(255,255,255,0.3);
+                            .circle{
+                                opacity: 1;
+                                img{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .text-pdf{
+                    width: 100%;
+                    padding: 0px 0px 3px 40px;
+                    background-image: url(../img/ico/icon-pdf.svg);
+                    background-position: 0% 0%;
+                    background-size: 22px;
+                    background-repeat: no-repeat;
+                    font-size: 14px;
+                    line-height: 23px;
+                    a{
+                        color: $fakeBlack;
+                        text-decoration: underline;
+                        font-size: 14px;
+                        line-height: 23px;
+                        font-weight: 400;
+                        transition: all 400ms ease;
+                        &:hover, &:active{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .second{
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .certificates{
+        padding: 100px 0;
+        .container-certificates{
+            .certificates-list{
+                width: 75%;
+                .certificate{
+                    width: 46%;
+                    margin-bottom: 30px;
+                    &:nth-child(n+3){
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .certificates{
+        padding: 70px 0;
+        .container-certificates{
+            h3{
+                margin-bottom: 40px;
+                font-size: 26px;
+                line-height: 30px;
+            }
+            .certificates-list{
+                width: 100%;
+                .certificate{
+                    margin-bottom: 50px;
+                    &:nth-child(n+3){
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .certificates{
+        padding: 50px 0;
+        .container-certificates{
+            .certificates-list{
+                width: 90%;
+                .certificate{
+                    width: 100%;
+                    margin-bottom: 50px;
+                    .img-pdf{
+                        margin-bottom: 20px;
+                    }
+                    &:nth-child(3){
+                        margin-bottom: 50px;
+                    }
+                    &:nth-child(4){
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

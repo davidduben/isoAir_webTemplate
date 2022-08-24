@@ -1,0 +1,171 @@
+#technicky-list{
+    display: none;
+}
+
+.tech-list-sub{
+    padding-top: 90px;
+    padding-bottom: 0px;
+    .container-technologie{
+        align-items: center;
+        .title{
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            color: $fakeBlack;
+            margin-bottom: 60px;
+        }
+        h2{
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .tech-para{
+            margin-top: 0px;
+        }
+        strong{
+            font-size: 17px;
+            line-height: 32px;
+            text-align: center;
+        }
+        span{
+            font-size: 17px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .margin-plus{
+            margin-top: 50px;
+        }
+        .document-list{
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            span{
+                width: 50%;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+        }
+        .table-container{
+            table{
+                margin-top: 0px;
+                thead{
+                    tr{
+                        th{
+                            width: 50%;
+                            padding: 16px 20px;
+                            text-align: left;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-weight: normal;
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .table-two{
+            table{
+                thead{
+                    tr{
+                        th{
+                            width: 31%;
+                            &:first-child{
+                                width: 7%;
+                            }
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-weight: normal;
+                            &:first-child{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table-three{
+            margin-bottom: 50px;
+            table{
+                thead{
+                    tr{
+                        th{
+                            width: 25%;
+                            text-align: center;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-weight: normal;
+                            text-align: center;
+                            &:first-child{
+                                font-weight: bold;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table-four{
+            margin-bottom: 50px;
+            table{
+                tbody{
+                    tr{
+                        td{
+                            font-weight: normal;
+                            text-align: center;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .tech-button{
+            .close{
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .tech-list-sub{
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .tech-list-sub{
+        padding-top: 20px;
+        .container-technologie{
+            .document-list{
+                span{
+                    width: 100%;
+                    font-size: 17px;
+                    padding: 1px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px){
+}

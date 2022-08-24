@@ -1,0 +1,22 @@
+$(document).ready(function(){
+    $("#hide-tech").click(function(){
+        $("#technicky-list").hide();
+        $("#show-tech").show();
+    });
+    $("#show-tech").click(function(){
+        $("#technicky-list").show();
+        $("#show-tech").hide();
+        $("#projektant").hide();
+        $("#show-projektant").show();
+    });
+    $("#hide-projektant").click(function(){
+        $("#projektant").hide();
+        $("#show-projektant").show();
+    });
+    $("#show-projektant").click(function(){
+        $("#projektant").show();
+        $("#show-projektant").hide();
+        $("#technicky-list").hide();
+        $("#show-tech").show();
+    });
+});
